@@ -93,7 +93,7 @@ if LuaNetworking:IsHost() then
 			table.insert(Options,{text=Vehicles[Index],callback=SpawnVehicle,data=Vehicles[Index+1]})
 		end
 	end
-	//table.insert(Options,{text="[DEBUG] Deactivate unit brain",callback=DeactivateUnitBrain})
+	--table.insert(Options,{text="[DEBUG] Deactivate unit brain",callback=DeactivateUnitBrain})
 	table.insert(Options,{text="[DEBUG] Delete invisible borders",callback=DeleteBorders})
 	table.insert(Options,{})
 	table.insert(Options,{text="Cancel",is_cancel_button=true})
