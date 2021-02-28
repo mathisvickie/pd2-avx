@@ -1,0 +1,8 @@
+{
+	"name":"Advanced Vehicle Extension",
+	"author":"[ASM] Segy",
+	"description":"Use more vehicles on more maps & drive helicopter !!",
+	"hooks":[{"hook_id":"lib/tweak_data/tweakdata","script_path":"packages.lua"}],
+	"persist_scripts":[{"global":"DisableHelicopterMOD","script_path":"helicopter.lua"}],
+	"keybinds":[{"keybind_id":"AVX_Menu","name":"AVX_Menu","description":"AVX_Menu","script_path":"main.lua","run_in_menu":false,"run_in_game":true,"localized":false}]
+}
