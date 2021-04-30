@@ -1,7 +1,7 @@
 
 if Global.load_level then
 	
-	local Packages={
+	local Packages = {
 		"levels/narratives/bain/cage/world/world",
 		"levels/narratives/vlad/shout/world/world",
 		"levels/narratives/vlad/jolly/world/world",
@@ -11,11 +11,7 @@ if Global.load_level then
 		"levels/narratives/butcher/thebomb/stage_3/world/world"
 	}
 	
-	local Index
-	for Index=1,#Packages do
-		if not PackageManager:loaded(Packages[Index]) then
-			PackageManager:load(Packages[Index])
-		end
+	for i=1, #Packages do
+		if not PackageManager:loaded(Packages[i]) then PackageManager:load(Packages[i]) end
 	end
-
 end
